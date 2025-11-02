@@ -52,7 +52,7 @@ jobs:
           cache: maven
 
       - name: Gerar JAR para deploy
-        run: mvn -B package --fle pom.xml -DskipTests
+        run: mvn -B package --file pom.xml -DskipTests
 
       - name: Upload JAR para deploy
         uses: actions/upload-artifact@v4
